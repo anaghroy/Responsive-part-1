@@ -1,0 +1,215 @@
+/*Font Family*/
+@font-face {
+  font-family: brand-font;
+  src: url(./Fonts/63cffc0a3942456e003bc265_Chillax-Regular.woff);
+}
+@font-face {
+  font-family: text-font;
+  src: url(./Fonts/63cffc20aa8997095067596f_Satoshi-Light.woff);
+}
+@font-face {
+  font-family: text-font-2;
+  src: url(./Fonts/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  /*Navbar*/
+  /*Image div*/
+  /*Second section*/
+}
+main header {
+  width: 100%;
+}
+main header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  font-family: text-font;
+}
+main header nav h1 {
+  color: #e2e0e0;
+  font-size: 1.5rem;
+}
+main header nav .cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+main header nav .cart .text {
+  background-color: #1e1e1e;
+  color: #e2e0e0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+main header nav .cart .icon {
+  background-color: #1e1e1e;
+  color: #e2e0e0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+}
+@media (min-width: 1000px) {
+  main h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+}
+main .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+main .top figure {
+  width: 100%;
+}
+main .top figure img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+main .top .second {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1.8rem;
+  background-color: #1e1e1e;
+  border-radius: 0.5rem;
+  font-family: brand-font;
+  color: #fff;
+}
+main .top .second h1 {
+  font-size: 1rem;
+}
+main .top .second p {
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  gap: 2rem;
+}
+main .top .second .para p {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #989794;
+}
+main .center {
+  display: flex;
+  flex-direction: column;
+}
+main .center .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+main .center .top .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: text-font-2;
+}
+main .center .top .content small {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 1rem;
+}
+main .center .top .content p {
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+}
+
+/*Main*/
+@media (min-width: 1000px) {
+  main {
+    /*Center section*/
+  }
+  main .top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  main .top figure {
+    width: 50%;
+    border-radius: 0.5rem;
+  }
+  main .top figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+  main .top .second {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 3rem;
+    background-color: #1e1e1e;
+    border-radius: 0.5rem;
+    font-family: brand-font;
+    color: #fff;
+  }
+  main .top .second h1 {
+    font-size: 1rem;
+  }
+  main .top .second p {
+    text-transform: uppercase;
+    font-size: 4.1rem;
+  }
+  main .top .second .para {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    text-transform: capitalize;
+  }
+  main .top .second .para p {
+    font-size: 1.2rem;
+    color: #989794;
+  }
+  main .center {
+    flex-direction: row;
+  }
+  main .center .top {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .center .top .content {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: text-font-2;
+  }
+  main .center .top .content small {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 1rem;
+  }
+  main .center .top .content p {
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    font-size: 2.5rem;
+    font-family: brand-font;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,236 @@
+/*Font Family*/
+@font-face {
+  font-family: brand-font;
+  src: url(./Fonts/63cffc0a3942456e003bc265_Chillax-Regular.woff);
+}
+@font-face {
+  font-family: text-font;
+  src: url(./Fonts/63cffc20aa8997095067596f_Satoshi-Light.woff);
+}
+@font-face {
+  font-family: text-font-2;
+  src: url(./Fonts/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  // Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+
+  /*Navbar*/
+  header {
+    width: 100%;
+
+    nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem;
+      font-family: text-font;
+      h1 {
+        color: #e2e0e0;
+        font-size: 1.5rem;
+      }
+      .cart {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        .text {
+          background-color: #1e1e1e;
+          color: #e2e0e0;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          font-size: 0.8rem;
+          letter-spacing: 0.2rem;
+        }
+
+        .icon {
+          background-color: #1e1e1e;
+          color: #e2e0e0;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  @media (min-width: 1000px) {
+    h1 {
+      // background-color: red;
+      display: flex;
+      align-items: center;
+      margin-left: 1.5rem;
+    }
+  }
+  /*Image div*/
+  .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    // background-color: red;
+    figure {
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+    .second {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      padding: 1.8rem;
+      background-color: #1e1e1e;
+      border-radius: 0.5rem;
+      font-family: brand-font;
+      color: #fff;
+      h1 {
+        font-size: 1rem;
+      }
+      p {
+        text-transform: uppercase;
+        font-size: 2.1rem;
+        gap: 2rem;
+      }
+      .para p {
+        text-transform: capitalize;
+        font-size: 1rem;
+        color: #989794;
+      }
+    }
+  }
+  
+  /*Second section*/
+  .center {
+    display: flex;
+    flex-direction: column;
+    .top {
+      // background-color: red;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-family: text-font-2;
+
+        small {
+          color: #fff;
+          opacity: 0.5;
+          font-size: 1rem;
+          // background-color: red;
+        }
+        p {
+          text-align: center;
+          color: #fff;
+          opacity: 1;
+        }
+      }
+    }
+  }
+} /*Main*/
+
+@media (min-width: 1000px) {
+  main {
+    .top {
+      width: 100%;
+      display: flex;
+      flex-direction: row; // ✅ side-by-side layout
+      justify-content: space-between;
+      padding: 2rem;
+      gap: 1rem;
+
+      figure {
+        width: 50%; // left side (image)
+        border-radius: 0.5rem;
+        // background-color: red;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0.5rem;
+        }
+      }
+
+      .second {
+        width: 50%; // right side (content)
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        padding: 3rem;
+        background-color: #1e1e1e;
+        border-radius: 0.5rem;
+        font-family: brand-font;
+        color: #fff;
+
+        h1 {
+          font-size: 1rem;
+        }
+
+        p {
+          text-transform: uppercase;
+          font-size: 4.1rem;
+        }
+
+        .para {
+          display: flex;
+          flex-direction: row;
+          gap: 2.5rem;
+          text-transform: capitalize;
+          p {
+            font-size: 1.2rem;
+            color: #989794;
+          }
+        }
+      }
+    }
+    /*Center section*/
+    .center {
+      flex-direction: row;
+
+      .top {
+        flex-direction: row;
+        justify-content: space-around;
+        .content {
+          flex-direction: column;
+          gap: 0.5rem;
+          font-family: text-font-2;
+          small {
+            color: #fff;
+            opacity: 0.5;
+            font-size: 1rem;
+            // background-color: red;
+          }
+          p {
+            text-align: center;
+            color: #fff;
+            opacity: 1;
+            font-size: 2.5rem;
+            font-family: brand-font;
+          }
+        }
+      }
+    }
+  }
+}
