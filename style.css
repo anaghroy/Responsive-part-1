@@ -475,6 +475,40 @@ main .view-3 .view-content .btn p {
   font-size: 1rem;
   color: #fffefe;
 }
+main .contact {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+main .contact .top {
+  background-color: #cebd63;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+main .contact .top h3 {
+  font-family: text-font;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+}
+main .contact .top p {
+  font-family: brand-font;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+main .contact .top .btn {
+  background-color: #121212;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+main .contact .top .btn p {
+  padding: 1rem;
+  color: #e2e0e0;
+  border: none;
+  font-size: 1rem;
+  font-family: text-font-2;
+}
 
 /*Main*/
 @media (min-width: 1000px) {

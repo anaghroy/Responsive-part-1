@@ -488,6 +488,41 @@ main {
       }
     }
   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .top {
+      background-color: #cebd63;
+      border-radius: 1rem;
+      gap: 2rem;
+      h3 {
+        font-family: text-font;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 0.9rem;
+      }
+      p {
+        font-family: brand-font;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+      }
+      .btn {
+        background-color: #121212;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        p {
+          padding: 1rem;
+          color: #e2e0e0;
+          border: none;
+          font-size: 1rem;
+          font-family: text-font-2;
+        }
+      }
+    }
+  }
 } /*Main*/
 
 @media (min-width: 1000px) {
