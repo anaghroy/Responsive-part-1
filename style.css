@@ -54,11 +54,12 @@ main header nav .cart {
   gap: 0.5rem;
 }
 main header nav .cart .text {
-  background-color: #1e1e1e;
-  color: #e2e0e0;
-  padding: 1rem;
+  font-family: text-font;
+  background-color: #cebd63;
+  color: #1e1e1e;
+  padding: 0.8rem;
   border-radius: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   letter-spacing: 0.2rem;
 }
 main header nav .cart .icon {
@@ -112,6 +113,22 @@ main .top .second .para p {
   font-size: 1rem;
   color: #989794;
 }
+main .top .second .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+main .top .second .btn button {
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  padding: 0.4rem;
+  border: 0.1em solid #fffefe;
+  color: #fffefe;
+}
+main .top .second .btn p {
+  font-size: 1rem;
+}
 main .center {
   display: flex;
   flex-direction: column;
@@ -157,7 +174,7 @@ main .view-1 .view-content {
 }
 main .view-1 .view-content h1 {
   font-size: 1rem;
-  font-family: text-font;
+  font-family: text-font-2;
   text-transform: uppercase;
   color: #fff;
   opacity: 0.7;
@@ -175,7 +192,12 @@ main .view-1 .view-content .para h2 {
   color: #fff;
   opacity: 0.8;
 }
-main .view-1 .view-content .para p {
+main .view-1 .view-content .para .text-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+main .view-1 .view-content .para .text-1 p {
   color: #fff;
   font-family: text-font;
   opacity: 0.5;
@@ -219,17 +241,239 @@ main .view-2 .view-content .para h2 {
   color: #fff;
   opacity: 0.8;
 }
-main .view-2 .view-content .para p {
+main .view-2 .view-content .para .text-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+main .view-2 .view-content .para .text-1 p {
   color: #fff;
   font-family: text-font;
   opacity: 0.5;
-  letter-spacing: 0.1rem;
 }
 main .text {
   color: #e2e0e0;
   font-family: brand-font;
   text-transform: uppercase;
   font-size: 1rem;
+  padding: 1rem;
+}
+main section.view-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  /*Card-1*/
+  /*Card-2*/
+  /*Card-3*/
+}
+main section.view-3 .card {
+  width: 100%;
+  background-image: url("./Images/four.webp");
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view-3 .card .circular,
+main section.view-3 .card .content {
+  background-color: rgba(84, 84, 84, 0.375);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fffefe;
+  font-family: brand-font;
+  border: 0.5px solid rgba(255, 255, 255, 0.575);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+main section.view-3 .card .icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main section.view-3 .card .circular {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main section.view-3 .card .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0.6rem;
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+}
+main section.view-3 .card .content .text {
+  font-family: text-font-2;
+  font-size: 1rem;
+}
+main section.view-3 .card-2 {
+  width: 100%;
+  background-image: url("./Images/five.webp");
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view-3 .card-2 .circular,
+main section.view-3 .card-2 .content {
+  background-color: rgba(84, 84, 84, 0.375);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fffefe;
+  font-family: brand-font;
+  border: 0.5px solid rgba(255, 255, 255, 0.575);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+main section.view-3 .card-2 .icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main section.view-3 .card-2 .circular {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main section.view-3 .card-2 .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0.6rem;
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+}
+main section.view-3 .card-2 .content .text {
+  font-family: text-font-2;
+  font-size: 1rem;
+}
+main section.view-3 .card-3 {
+  width: 100%;
+  background-image: url("./Images/six.webp");
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view-3 .card-3 .circular,
+main section.view-3 .card-3 .content {
+  background-color: rgba(84, 84, 84, 0.375);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fffefe;
+  font-family: brand-font;
+  border: 0.5px solid rgba(255, 255, 255, 0.575);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+main section.view-3 .card-3 .icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main section.view-3 .card-3 .circular {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main section.view-3 .card-3 .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0.6rem;
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+}
+main section.view-3 .card-3 .content .text {
+  font-family: text-font-2;
+  font-size: 1rem;
+}
+main .view-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+main .view-3 img {
+  width: 100%;
+  border-radius: 0.5rem;
+  opacity: 0.7;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-3 .view-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+main .view-3 .view-content h1 {
+  color: #e2e0e0;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: text-font-2;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+main .view-3 .view-content .para {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .view-3 .view-content .para h2 {
+  font-family: brand-font;
+  font-weight: 400;
+  color: #fffefe;
+  text-transform: uppercase;
+  text-align: justify;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+main .view-3 .view-content .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+main .view-3 .view-content .btn button {
+  padding: 0.6rem;
+  border-radius: 50%;
+  border: 0.1rem solid #fff;
+  background-color: #282626;
+  color: #fff;
+  cursor: pointer;
+}
+main .view-3 .view-content .btn button i {
+  font-size: 1rem;
+}
+main .view-3 .view-content .btn p {
+  text-transform: uppercase;
+  font-family: text-font-2;
+  font-size: 1rem;
+  color: #fffefe;
 }
 
 /*Main*/
@@ -267,6 +511,7 @@ main .text {
   }
   main .top .second h1 {
     font-size: 1rem;
+    margin-left: 0.1rem;
   }
   main .top .second p {
     text-transform: uppercase;
@@ -331,7 +576,7 @@ main .text {
   }
   main .view-1 .view-content h1 {
     font-size: 1rem;
-    font-family: text-font;
+    font-family: text-font-2;
     text-transform: uppercase;
     color: #fff;
     opacity: 0.7;
@@ -340,7 +585,7 @@ main .text {
   main .view-1 .view-content .para {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
     padding: 1rem;
   }
   main .view-1 .view-content .para h2 {
@@ -387,6 +632,7 @@ main .text {
     color: #fff;
     letter-spacing: 0.1rem;
     opacity: 0.7;
+    margin-left: -0.1rem;
   }
   main .view-2 .view-content .para {
     display: flex;
@@ -406,5 +652,24 @@ main .text {
     font-family: text-font;
     opacity: 0.5;
     letter-spacing: 0.1rem;
+  }
+  main section.view-3 {
+    flex-direction: row;
+  }
+  main .view-3 {
+    width: 100%;
+  }
+  main .view-3 figure {
+    width: 50%;
+  }
+  main .view-3 .view-content {
+    width: 50%;
+  }
+  main .view-3 .view-content .para h2 {
+    text-align: left;
+    padding: 1.5rem;
+  }
+  main .view-3 .view-content .btn {
+    padding: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
